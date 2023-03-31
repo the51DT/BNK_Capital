@@ -1,0 +1,214 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 768px;
+}
+.header {
+  flex: 0 0 60px;
+}
+.footer {
+  flex: 0 0 40px;
+  padding: 0 30px;
+  margin-top: 21px;
+}
+.wrap {
+  height: 100%;
+  overflow-y: auto;
+}
+.containel {
+  padding: 0 20px;
+  margin-top: 64px;
+  margin-bottom: 164px;
+}
+.header .top_menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px 0;
+}
+.flex_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_title {
+  margin-top: 60px;
+}
+.box_shadow {
+  border-radius: 32px;
+  box-shadow: 2px 6px 17px rgb(0, 0, 0, 0.08);
+}
+
+.section01 .main_title {
+  display: flex;
+}
+.section01 .main_title img {
+  width: auto;
+}
+.tabSwiper {
+  margin-top: 25px;
+}
+.tabSwiper .swiper-slide {
+  width: auto !important;
+}
+.section01 .alarm_banner {
+  background: #eaeef2;
+  border-radius: 24px;
+  padding: 20px 20px 20px 21px;
+  margin-top: 20px;
+}
+.section01 .content img + img {
+  margin-left: 12px;
+}
+
+.section02 .section_title {
+  margin-top: 40px;
+}
+.section02 .loan_total {
+  padding: 32px 20px;
+  margin-top: 20px;
+}
+.section02 .loan_box > img + img {
+  margin-top: -72px;
+  margin-right: -24px;
+}
+.section02 .loan_info {
+  margin-top: 16px;
+}
+.section02 .loan_total_num {
+  margin-top: 8px;
+}
+.section02 .loan_prog {
+  margin-top: 20px;
+}
+.section02 .loan_list_info ul {
+  margin-top: 24px;
+}
+.section02 .loan_list_info ul li {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+.section02 .loan_list_info ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.section02 .flex_btn {
+  margin-top: 32px;
+  justify-content: center;
+}
+.section02 .flex_btn .btn_wrap + .btn_wrap {
+  margin-left: 8px;
+}
+.section03 .card_banner {
+  padding: 28px 20px 20px 20px;
+  margin-top: 20px;
+}
+.section03 .card_banner + .card_banner {
+  margin-top: 12px;
+}
+.rol_banner_box {
+  padding: 12px 30px 8px;
+  background: #fbe8e9;
+  border-radius: 24px;
+  height: 80px;
+}
+
+.rol_banner_wrap .swiper-wrapper {
+  padding-bottom: 20px;
+  margin-top: 12px;
+}
+.rol_banner_wrap .swiper-horizontal > .swiper-pagination-bullets,
+.rol_banner_wrap .swiper-pagination-bullets.swiper-pagination-horizontal,
+.rol_banner_wrap .swiper-pagination-custom,
+.rol_banner_wrap .swiper-pagination-fraction {
+  bottom: -6px !important;
+}
+.rol_banner_wrap
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.rol_banner_wrap
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #242d3c;
+}
+
+.cardSwper.swiper {
+  overflow: initial;
+  margin-top: 20px;
+}
+.cardSwper.swiper .flex_box_col {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 144px;
+}
+.cardSwper.swiper .flex_box_col img + img {
+  margin-left: auto;
+}
+
+.section05 .list_wrap {
+  margin-top: 32px;
+}
+.section05 .list_wrap ul li {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #efefef;
+}
+.section05 .list_wrap ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.section06 .box_shadow {
+  padding: 32px 0;
+}
+.section06 .cus_wrap {
+  margin-top: 20px;
+}
+.section06 .cus_wrap ul li {
+  margin-left: 8px;
+  width: 50%;
+  text-align: center;
+}
+.section06 .cus_wrap ul li:first-child {
+  margin-left: 0;
+}
+.bottom_sheet {
+  background: #242d3c;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding: 28px 20px 28px 30px;
+  text-align: center;
+}
+.bottom_sheet > img {
+  margin-top: -20px;
+}
+.bottom_sheet_wrap {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+  max-width: 767px;
+}

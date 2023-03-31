@@ -6,54 +6,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Type A</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <style>
-        html,body{
-            height: 100%;
-            margin: 0;
-        }
-        .wrap{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            overflow: hidden;
-            margin: 0 auto;
-            max-width: 768px;
-        }
-        .header{
-            flex: 0 0 60px;
-        }
-        .footer{
-            flex: 0 0 40px;
-            padding:0 30px;
-            margin-top:21px;
-        }
-        .wrap{
-            height: 100%;
-            overflow-y: auto;
-        }
-        .containel{
-            padding: 0 30px;
-        }
+
     </style>
   </head>
   <body>
     <div class="wrap">
         <div class="header">
             <header>
-
+                <div class="top_menu">
+                    <div class="logo">
+                        <img src="./img/main/ico_top_logo.svg">
+                    </div>
+                    <div class="menu">
+                        <img src="./img/main/ico_top_menu.svg">
+                    </div>
+                </div>
             </header>  
         </div>
         <div class="containel">
-            <section>
-                
+            <section class="section01">
+                <div class="section_inner">
+                    <div class="main_title">
+                        <img src="./img/main/title_main.svg">
+                    </div>
+                    <div class="tab_swiper">
+                        <!-- Swiper -->
+                        <div class="swiper tabSwiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/main/tab_btn_01.svg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/tab_btn_02.svg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/tab_btn_03.svg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/tab_btn_04.svg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/tab_btn_05.svg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/main/tab_btn_02.svg">
+                            </div>
+                            </div>
+                        </div>
+                        <!-- //Swiper -->
+                    </div>
+                    <div class="alarm_banner flex_box">
+                        <div class="content flex_box">
+                            <img class="ico" src="./img/main/ico_alarm.svg">
+                            <img src="./img/main/alarm_text.svg">
+                        </div>
+                        <div class="arrow">
+                            <img src="./img/main/ico_right.svg">
+                        </div>
+                    </div>
+                </div>
             </section>
-        </div>
-        <div class="footer">
-            <footer>
-                
-            </footer>
+            <section class="section02">
+                <div class="section_inner">
+                    <div class="section_title">
+                        <img src="./img/main/title_sub_01.svg">
+                    </div>
+                    <div class="section_item">
+                        <div class="loan_total box_shadow">
+                            <div class="loan_box flex_box">
+                                <img src="./img/main/loan_car_text.svg">
+                                <img src="./img/main/loan_car_img.svg">
+                            </div>
+                            <div class="loan_info">
+                                <div class="loan_text">
+                                    <img src="./img/main/loan_text.svg">
+                                </div>
+                                <div class="loan_total_num">
+                                    <span>0</span>원
+                                </div>
+                                <div class="loan_prog">
+
+                                </div>
+                                <div class="loan_list_info">
+                                    <ul>
+                                        <li class="flex_box">
+                                            <img src="./img/main/loan_interest_rate.svg">
+                                            <img src="./img/main/loan_interest_rate_text.svg">
+                                        </li>
+                                        <li class="flex_box">
+                                            <img src="./img/main/loan_month_date.svg">
+                                            <img src="./img/main/loan_month_date_text.svg">
+                                        </li>
+                                        <li class="flex_box">
+                                            <img src="./img/main/loan_month_pay.svg">
+                                            <img src="./img/main/loan_month_pay_text.svg">
+                                        </li>
+                                    </ul>
+                                    <div class="flex_btn">
+                                        <div class="btn_wrap">
+                                            <img src="./img/main/btn_im_pay.svg"> 
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <img src="./img/main/btn_prepay.svg"> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section03">
+                <div class="section_inner">
+                    <div class="section_title">
+                        <img src="./img/main/title_sub_02.svg">
+                    </div>
+                    <div class="card_banner_wrap">
+                        <div class="card_banner flex_box box_shadow">
+                            <img src="./img/main/card_banner_text_01.svg">
+                            <img src="./img/main/card_banner_img_01.svg">
+                        </div>
+                        <div class="card_banner flex_box box_shadow">
+                            <img src="./img/main/card_banner_text_02.svg">
+                            <img src="./img/main/card_banner_img_02.svg">
+                        </div>
+                    </div>
+                    <div class="rol_banner_wrap">
+                        <!-- Swiper -->
+                        <div class="swiper bannerSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="rol_banner_box flex_box">
+                                        <img src="./img/main/rol_banner_text_01.svg">
+                                        <img src="./img/main/rol_banner_img_01.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="rol_banner_box flex_box">
+                                        <img src="./img/main/rol_banner_text_02.svg">
+                                        <img src="./img/main/rol_banner_img_02.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- //Swiper -->
+                    </div>
+                </div>
+            </section>
+            <section class="section04">
+                <div class="section_inner">
+                    <div class="section_title">
+                        <img src="./img/main/title_sub_03.svg">
+                    </div>
+                    <div class="swiper_banner_wrap">
+                        <!-- Swiper -->
+                        <div class="swiper cardSwper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="flex_box_col box_shadow">
+                                        <img src="./img/main/swipe_banner_text_01.svg">
+                                        <img src="./img/main/swipe_banner_img_01.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex_box_col box_shadow">
+                                        <img src="./img/main/swipe_banner_text_02.svg">
+                                        <img src="./img/main/swipe_banner_img_02.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex_box_col box_shadow">
+                                        <img src="./img/main/swipe_banner_text_03.svg">
+                                        <img src="./img/main/swipe_banner_img_01.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //Swiper -->
+                    </div>
+                </div>
+            </section>
+            <section class="section05">
+                <div class="section_inner">
+                    <div class="section_title">
+                        <img src="./img/main/title_sub_04.svg">
+                    </div>
+                    <div class="list_wrap">
+                        <ul>
+                            <li>
+                                <img src="./img/main/event_list_01.svg">
+                            </li>
+                            <li>
+                                <img src="./img/main/event_list_02.svg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section06">
+                <div class="section_inner">
+                    <div class="section_title">
+                        <img src="./img/main/title_sub_05.svg">
+                    </div>
+                    <div class="cus_wrap">
+                        <ul class="flex_box">
+                            <li class="box_shadow">
+                                <img src="./img/main/help_cons.svg">
+                            </li>
+                            <li class="box_shadow">
+                                <img src="./img/main/help_chatbot.svg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rol_banner_wrap">
+                        <!-- Swiper -->
+                        <div class="swiper bannerSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="rol_banner_box flex_box">
+                                        <img src="./img/main/rol_banner_text_02.svg">
+                                        <img src="./img/main/rol_banner_img_02.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="rol_banner_box flex_box">
+                                        <img src="./img/main/rol_banner_text_01.svg">
+                                        <img src="./img/main/rol_banner_img_01.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- //Swiper -->
+                    </div>
+                </div>
+            </section>
+            <section class="bottom_sheet_wrap">
+                <div class="bottom_sheet">
+                    <img src="./img/main/bottom_sheet_bar.svg">
+                    <div class="flex_box">
+                        <img src="./img/main/bottom_sheet_total.svg">
+                        <img src="./img/main/btn_bottom_sheet.svg">
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     </div>
   </body>
 </html>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    //Tab
+    var swiper = new Swiper(".tabSwiper", {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      loop: false
+    });
+
+    //배너
+    var swiper = new Swiper(".bannerSwiper", {
+        slidesPerView : 1,
+        spaceBetween: 25,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });      
+    //card
+    var swiper = new Swiper(".cardSwper", {
+        slidesPerView : 2.16,
+        spaceBetween: 8,
+    });      
+</script>
+
