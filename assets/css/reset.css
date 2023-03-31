@@ -1,73 +1,161 @@
-/*reset.css*/
-/* RESETS */
-*,
-*::before,
-*::after {
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url("../font/Pretendard-1.2.1/public/static/Pretendard-Light.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("../font/Pretendard-1.2.1/public/static/Pretendard-Medium.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("../font/Pretendard-1.2.1/public/static/Pretendard-Regular.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "pretendardBold";
+  src: url("../font/Pretendard-1.2.1/public/static/Pretendard-Bold.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-ExtraBold";
+  src: url("../font/Pretendard-1.2.1/public/static/Pretendard-ExtraBold.otf")
+    format("opentype");
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: top;
   box-sizing: border-box;
 }
-*:focus {
-  /* outline: 3px dashed #228bec; */
-}
-html {
-  font: 62.5% / 1.15 sans-serif;
-}
-h1,
-h2 {
-  margin-bottom: 0;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  appearance: none;
-}
-button::-moz-focus-inner {
-  border: 0;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-}
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-input[type="text"] {
-  border-radius: 0;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a,
+a:link {
+  color: black;
+  text-decoration: none;
+}
+.clear {
+  display: block;
+  clear: both;
+}
+img {
   width: 100%;
-  /* max-width: 68rem; */
-  margin: 0 auto;
-  font: 1.6rem/1.25 "Chakra Petch", "Roboto", "Noto Sans KR", sans-serif;
-  /* background-color: #000; */
-  /* color: #4d4d4d; */
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }
-@media screen and (min-width: 620px) {
-  body {
-    font-size: 1.9rem;
-    line-height: 1.31579;
-  }
-}
-/*END RESETS*/
