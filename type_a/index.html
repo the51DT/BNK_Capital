@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <style>
-
-    </style>
   </head>
   <body>
     <div class="wrap">
@@ -59,7 +57,7 @@
                         </div>
                         <!-- //Swiper -->
                     </div>
-                    <div class="alarm_banner flex_box">
+                    <div class="alarm_banner flex_box" data-aos="fade-up" >
                         <div class="content flex_box">
                             <img class="ico" src="./img/main/ico_alarm.svg">
                             <img src="./img/main/alarm_text.svg">
@@ -72,11 +70,11 @@
             </section>
             <section class="section02">
                 <div class="section_inner">
-                    <div class="section_title">
+                    <div class="section_title" data-aos="fade-up" data-aos-delay="100">
                         <img src="./img/main/title_sub_01.svg">
                     </div>
                     <div class="section_item">
-                        <div class="loan_total box_shadow">
+                        <div class="loan_total box_shadow" data-aos="fade-up" data-aos-delay="100">
                             <div class="loan_box flex_box">
                                 <img src="./img/main/loan_car_text.svg">
                                 <img src="./img/main/loan_car_img.svg">
@@ -86,10 +84,14 @@
                                     <img src="./img/main/loan_text.svg">
                                 </div>
                                 <div class="loan_total_num">
-                                    <span>0</span>원
+                                    <span class="value" id="counter1">0</span><span class="text-won">원</span>
                                 </div>
                                 <div class="loan_prog">
-
+                                    <div class="prog_bar"></div>
+                                    <div class="prog_info">
+                                        <img src="./img/main/prog_info_01.svg">
+                                        <img src="./img/main/prog_info_02.svg">
+                                    </div>
                                 </div>
                                 <div class="loan_list_info">
                                     <ul>
@@ -260,9 +262,11 @@
     </div>
   </body>
 </html>
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script>
 <script>
     AOS.init();
 
@@ -286,5 +290,31 @@
         slidesPerView : 2.16,
         spaceBetween: 8,
     });      
+
+    //총 자산 증감
+    function numberCounter(target_frame, target_number) {
+        this.count = 0; this.diff = 0;
+        this.target_count = parseInt(target_number);
+        this.target_frame = document.getElementById(target_frame);
+        this.timer = null;
+        this.counter();
+    };
+    numberCounter.prototype.counter = function() {
+        var self = this;
+        this.diff = this.target_count - this.count;
+        
+        if(this.diff > 0) {
+            self.count += Math.ceil(this.diff / 5);
+        }
+        
+        this.target_frame.innerHTML = this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        
+        if(this.count < this.target_count) {
+            this.timer = setTimeout(function() { self.counter(); }, 20);
+        } else {
+            clearTimeout(this.timer);
+        }
+    };
+    new numberCounter("counter1", 90000000);
 </script>
 

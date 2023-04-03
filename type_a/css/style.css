@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "NEXON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
+  font-family: "NEXON";
 }
 .wrap {
   display: flex;
@@ -93,6 +102,9 @@ body {
 .section02 .loan_prog {
   margin-top: 20px;
 }
+.section02 .loan_list_info {
+  margin-top: 48px;
+}
 .section02 .loan_list_info ul {
   margin-top: 24px;
 }
@@ -113,6 +125,60 @@ body {
 }
 .section02 .flex_btn .btn_wrap + .btn_wrap {
   margin-left: 8px;
+}
+.section02 .loan_total_num {
+  color: #d7191f;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 8px;
+}
+.section02 .text-won {
+  font-size: 14px;
+  vertical-align: bottom;
+}
+.section02 .loan_prog {
+  position: relative;
+}
+.section02 .prog_bar {
+  border: 1px solid #efefef;
+  background: #f5f5f4;
+  width: 100%;
+  height: 8px;
+  border-radius: 500px;
+}
+.section02 .prog_bar:before {
+  content: "";
+  display: inline-block;
+  width: 39%;
+  height: 8px;
+  background-color: #d7191f;
+  border-radius: 500px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  top: 0;
+  animation: prog-ani 2s ease forwards;
+}
+@keyframes prog-ani {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 39%;
+  }
+}
+
+.section02 .prog_info {
+  margin-top: 8px;
+}
+.section02 .prog_info img {
+  position: absolute;
+}
+.section02 .prog_info img:nth-child(1) {
+  left: 35%;
+}
+.section02 .prog_info img:nth-child(2) {
+  right: 0;
 }
 .section03 .card_banner {
   padding: 28px 20px 20px 20px;
