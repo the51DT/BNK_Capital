@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Type Product Detail</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="wrap product_detail">
+        <div class="header">
+            <header>
+                <div class="top_menu">
+                    <div class="menu">
+                        <a href="./index.html">
+                            <img src="./img/sub/detail/title_prod.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="top_banner flex_box_col">
+                    <a href="./sub_loan_step_01.html">
+                        <img src="./img/sub/detail/top_banner_text.svg"data-aos="fade-up" data-aos-delay="">
+                    </a>
+                    <img src="./img/sub/detail/banner_img.svg"data-aos="fade-up" data-aos-delay="100">
+                </div>
+            </header>  
+        </div>
+        <div class="containel product_detail_section">
+            <section class="section01">
+                <div class="section_inner">
+                    <div class="detail_list box_shadow flex_box_col"data-aos="fade-up" data-aos-delay="200">
+                        <img src="./img/sub/detail/detail_contents_01.svg">
+                        <img src="./img/sub/detail/detail_contents_01_img.svg">
+
+                        <div class="progress-wrap progress-type2 scroll-item">
+                            <canvas id="myChart" aria-label="내 자산" role="Chart" style="width: 205px; height: 197px;" ></canvas>
+                        </div>
+                    </div>
+                    <div class="detail_list box_shadow flex_box_col"data-aos="fade-up" data-aos-delay="100">
+                        <img src="./img/sub/detail/detail_contents_02.svg">
+                        
+                        <div class="month_setting">
+                            <img class="img_money" src="./img/sub/detail/detail_contents_02_img.svg">
+                            <div class="month_prog">
+                                <div class="prog_active">
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <div class="prog_bg"></div>
+                            </div>
+                            <div class="month_list">
+                                <ul class="flex_box">
+                                    <li><img src="./img/sub/detail/18M.svg"></li>
+                                    <li><img src="./img/sub/detail/36M.svg"></li>
+                                    <li><img src="./img/sub/detail/48M.svg"></li>
+                                    <li><img src="./img/sub/detail/72M.svg"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_list box_shadow flex_box_col"data-aos="fade-up" data-aos-delay="100">
+                        <img src="./img/sub/detail/detail_contents_03.svg">
+                        <img src="./img/sub/detail/detail_contents_03_img.svg">
+                    </div>
+                    <div class="detail_list box_shadow flex_box_col"data-aos="fade-up" data-aos-delay="100">
+                        <img src="./img/sub/detail/detail_contents_04.svg">
+                        <img src="./img/sub/detail/detail_contents_04_img.svg">
+                    </div>
+                    <div class="detail_list box_shadow flex_box_col"data-aos="fade-up" data-aos-delay="100">
+                        <img src="./img/sub/detail/detail_contents_05.svg">
+                        <img src="./img/sub/detail/detail_contents_05_img.svg">
+                    </div>
+                    <div class="detail_list_text">
+                        <ul>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_01.svg">
+                                <img src="./img/sub/detail/icon_arrow.svg">
+                            </li>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_02.svg">
+                                <img src="./img/sub/detail/icon_arrow.svg">
+                            </li>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_03.svg">
+                                <img src="./img/sub/detail/icon_arrow.svg">
+                            </li>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_04.svg">
+                                <img src="./img/sub/detail/icon_arrow.svg">
+                            </li>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_05.svg">
+                                <img src="./img/sub/detail/icon_arrow.svg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <a href="./index.html">
+                            <img src="./img/sub/detail/btn.svg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script>
+<script>
+    AOS.init();
+
+
+    
+//기간설정 프로그래스바
+window.addEventListener('scroll', function(){
+    if($(".section_inner > .detail_list:nth-child(2)").hasClass("aos-animate")){
+        console.log("aa")
+        $(".img_money").addClass("active")
+        $(".prog_active ul").addClass("active")
+    }else{
+        console.log("bb")
+        $(".img_money").removeClass("active")
+        $(".prog_active ul").removeClass("active")
+    }
+
+
+
+    if($(".section_inner > .detail_list:nth-child(1)").hasClass("aos-animate")){
+        // 도넛그래프
+        Chart.register(ChartjsPluginStacked100.default);
+        const ctx = document.getElementById('myChart');
+        const doughnut = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [6.4, 3.6],
+                    backgroundColor: [
+                        '#D7191F',
+                        '#fff0'
+                    ],
+                    borderWidth: 0,
+                    borderColor: '#fff0',
+                    rotation:-130,
+                    cutout: "97%",
+                }],
+                
+            },
+            options: {
+            }
+        });
+    }else{
+    }
+});
+
+
+
+</script>
+
