@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "NEXON";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    font-family: "NEXON";
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  .header {
+    flex: 0 0 55px;
+  }
+  .footer {
+    flex: 0 0 40px;
+    padding: 0 30px;
+    margin-top: 21px;
+  }
+  .wrap {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .containel {
+    padding: 0 20px;
+    margin-top: 41px;
+    margin-bottom: 32px;
+  }
+  .header .top_menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 20px 0;
+  }
+  .flex_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section_title {
+    margin-top: 60px;
+  }
+  .box_shadow {
+    border-radius: 32px;
+    box-shadow: 2px 6px 17px rgb(0, 0, 0, 0.08);
+  }
+
+  /* sub step page */
+  .main_title{
+    text-align: center;
+  }
+  .info_list{
+    margin-top: 32px;
+  }
+  .info_list .info_item .info_item_title{
+    margin-top: 60px;
+  }
+  .info_item .info_item_title{
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-top:16px;
+  }
+  .info_item .info_item_title.input_title{
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .info_item .info_item_form .form_box{
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    padding: 18px 20px;
+  }
+  .info_list .info_item_form .form_box + .form_box{
+    margin-top: 8px;
+  }
+  .info_item_list + .info_item_form .form_box {
+    margin-top: 24px;
+  }
+  .noti{
+    margin-top:8px;
+  }
+  .flex_align_top{
+    align-items: flex-start;
+  }
+  .btn_next{
+    width: 100%;
+    padding: 18px 0;
+    background: #242D3C;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .complete_img{
+    margin-top: 32px;
+  }
+  .btn_next a{
+    display: block;
+  }
+ .flex_box_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+
+
+  /* menu page */
+  .menu .containel{
+    margin-top: 60px;
+  }
+  .menu .rol_banner_box {
+    padding: 12px 30px 8px;
+    background: #fbe8e9;
+    border-radius: 24px;
+    height: 80px;
+    margin-top:20px;
+  }
+  .menu .flex_btn {
+    margin-top: 12px;
+  }
+  .menu .btn_wrap {
+    border: 1px solid #CCCCCC;
+    padding: 18px 0;
+    border-radius: 16px;
+    width: 50%;
+    margin-left: 8px;
+    text-align: center;
+    line-height: 0;
+  }
+  .menu .btn_wrap.confirm {
+    border: 1px solid #D7191F;
+  }
+  .menu .btn_wrap:first-child {
+    margin-left: 0;
+  }
+  .menu .depth_title {
+    margin-top: 60px;
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #242D3C;
+  }
+  .menu .depth_list  {
+    margin-top: 24px;
+    margin-left: 20px;
+    margin-right: 83px;
+    align-items: flex-start;
+  }
+  .menu .depth_item  {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #EFEFEF;
+  }
+  .menu .depth_item.last_item  {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+
+  /* chat bot page */
+  .chat_bot .containel{
+    margin-top: 37px;
+    margin-bottom: 120px;
+  }
+  .chat_bot .date{
+    text-align: center;
+  }
+  .chat_bot .date{
+    text-align: center;
+  }
+  .chat_bot .recep_item{
+    margin-top: 20px;
+  }
+  .chat_bot .recep_swiper{
+    margin-top: 12px;
+  }
+  .chat_bot .recep_time{
+    margin-top: 8px;
+  }
+  .chat_bot .send_time{
+    margin-top: 20px;
+  }
+  .chat_bot .swiper_item_inner {
+    background: #F7F9FD;
+    padding: 20px;
+    border-radius: 24px;
+    border-top-left-radius: 0;
+  }
+  .chat_bot .swiper_item_btn {
+    margin-top: 12px;
+  }
+  .chat_bot .swiper_item_btn .btn {
+    line-height: 0;
+    border: 1px solid #000;
+    border-radius: 16px;
+    padding: 16px 0;
+    text-align: center;
+  }
+  .chat_bot .swiper_item_btn .btn + .btn {
+    margin-top:4px
+  }
+  .chat_bot .send_time {
+    text-align: right;
+  }
+  .chat_bot .input_wrap {
+    padding: 14px 20px;
+    border-radius: 500px;
+    background: rgb(247 249 253 / 80%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 20px;
+    width: 89%;
+    max-width: 727px;
+  }
+  .chat_bot .input_wrap img + img {
+    margin-left: 16px;
+  }
+  
+
+  /* my data */
+  .my_data .net_worth_score {
+    color: #d7191f;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 8px;
+  }
+  .my_data.containel {
+    margin-top:60px;
+  }
+  .my_data .net_worth {
+    align-items: flex-start;
+  }
+  .my_data .net_worth_score + img {
+    margin-top: 20px;
+  }
+  .my_data .section_inner .my_data_item:nth-child(2)  {
+    margin-top: 40px;
+  }
+  .my_data .my_data_item {
+    margin-top: 12px;
+    padding: 32px 20px;
+  }
+  .my_data .my_data_title {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EFEFEF;
+  }
+  .my_data .myDataSwper {
+    overflow: initial;
+  }
+  .my_data .swiper_wrap {
+    margin-top: 12px;
+  }
+  .my_data .swiper_item {
+    height: 144px;
+    padding: 24px 20px;
+  }
+  .my_data .swiper_item img + img {
+    margin-left: auto;
+  }

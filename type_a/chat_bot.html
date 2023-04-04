@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Type A</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="wrap chat_bot">
+        <div class="header">
+            <header>
+                <div class="top_menu">
+                    <div class="menu">
+                        <a href="./index.html">
+                            <img src="./img/sub/chatbot/chatbot_title.svg">
+                        </a>
+                    </div>
+                </div>
+            </header>  
+        </div>
+        <div class="containel">
+            <section class="section01">
+                <div class="section_inner">
+                    <div class="chat_list">
+                        <div class="date">
+                            <img src="./img/sub/chatbot/date.svg">
+                        </div>
+                        <div class="recep_list">
+                            <div class="recep_item">
+                                <img src="./img/sub/chatbot/recep.svg">
+                            </div>
+                            <div class="recep_swiper">
+                                <!-- Swiper -->
+                                <div class="swiper recepSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper_item_inner">
+                                                <div class="swiper_item_title">
+                                                    <img src="./img/sub/chatbot/my_asset.svg">
+                                                </div>
+                                                <div class="swiper_item_btn">
+                                                    <div class="btn">
+                                                        <img src="./img/sub/chatbot/loan_acco_btn_01.svg">
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="./img/sub/chatbot/loan_acco_btn_02.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper_item_inner">
+                                                <div class="swiper_item_title">
+                                                    <img src="./img/sub/chatbot/my_loan.svg">
+                                                </div>
+                                                <div class="swiper_item_btn">
+                                                    <div class="btn">
+                                                        <img src="./img/sub/chatbot/cred_btn_01.svg">
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="./img/sub/chatbot/cred_btn_02.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //Swiper -->
+                            </div>
+                            <div class="recep_time">
+                                <img src="./img/sub/chatbot/recep_time.svg">
+                            </div>
+                            <div class="send_time">
+                                <img src="./img/sub/chatbot/send.svg">
+                            </div>
+                            <div class="input_wrap flex_box">
+                                <div class="input_left flex_box">
+                                    <img src="./img/sub/chatbot/ico_add.svg">
+                                    <img src="./img/sub/chatbot/input_placeholder.svg">
+                                </div>
+                                <div class="input_right">
+                                    <img src="./img/sub/chatbot/ico_send.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script>
+<script>
+    AOS.init();
+
+    var swiper = new Swiper(".recepSwiper", {
+        slidesPerView : 1.4,
+        spaceBetween: 12,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });   
+</script>
+

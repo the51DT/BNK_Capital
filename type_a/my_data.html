@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Type A My Data</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="wrap">
+        <div class="header">
+            <header>
+                <div class="top_menu">
+                    <div class="menu">
+                        <a href="./index.html">
+                            <img src="./img/sub/mydata/title_my_data.svg">
+                        </a>
+                    </div>
+                </div>
+            </header>  
+        </div>
+        <div class="containel my_data">
+            <section class="section01">
+                <div class="section_inner">
+                    
+                    <div class="net_worth flex_box">
+                        <div class="net_worth_info">
+                            <img src="./img/sub/mydata/text_net_worth.svg">
+                            <div class="net_worth_score">
+                                <span class="value" id="counter1">0</span>원
+                            </div>
+                            <img src="./img/sub/mydata/credit_score.svg">
+                        </div>
+                        <img src="./img/sub/mydata/btn_refresh.svg">
+                    </div>
+                    <div class="my_data_item box_shadow">
+                        <div class="my_data_title flex_box">
+                            <img src="./img/sub/mydata/title_asset.svg">
+                            <img src="./img/sub/mydata/score_asset.svg">
+                        </div>
+                        <div class="my_data_list">
+                            <img src="./img/sub/mydata/list_asset.svg">
+                        </div>
+                    </div>
+                    <div class="my_data_item box_shadow">
+                        <div class="my_data_title flex_box">
+                            <img src="./img/sub/mydata/title_invest.svg">
+                            <img src="./img/sub/mydata/score_invest.svg">
+                        </div>
+                        <div class="my_data_list">
+                            <img src="./img/sub/mydata/list_invest.svg">
+                        </div>
+                    </div>
+                    <div class="my_data_item box_shadow">
+                        <div class="my_data_title flex_box">
+                            <img src="./img/sub/mydata/title_consum.svg">
+                            <img src="./img/sub/mydata/score_consum.svg">
+                        </div>
+                        <div class="my_data_list">
+                            <img src="./img/sub/mydata/list_consum.svg">
+                        </div>
+                    </div>
+                    <div class="swiper_wrap">
+                        <!-- Swiper -->
+                        <div class="swiper myDataSwper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper_item box_shadow flex_box_col">
+                                        <img src="./img/sub/mydata/banner_text_01.svg">
+                                        <img src="./img/sub/mydata/ico_banner_01.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper_item box_shadow flex_box_col">
+                                        <img src="./img/sub/mydata/banner_text_02.svg">
+                                        <img src="./img/sub/mydata/ico_banner_02.svg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper_item box_shadow flex_box_col">
+                                        <img src="./img/sub/mydata/banner_text_03.svg">
+                                        <img src="./img/sub/mydata/ico_banner_01.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //Swiper -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.0.0"></script>
+<script>
+    AOS.init();
+
+    //총 자산 증감
+    function numberCounter(target_frame, target_number) {
+            this.count = 0; this.diff = 0;
+            this.target_count = parseInt(target_number);
+            this.target_frame = document.getElementById(target_frame);
+            this.timer = null;
+            this.counter();
+    };
+    numberCounter.prototype.counter = function() {
+        var self = this;
+        this.diff = this.target_count - this.count;
+        
+        if(this.diff > 0) {
+            self.count += Math.ceil(this.diff / 5);
+        }
+        
+        this.target_frame.innerHTML = this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        
+        if(this.count < this.target_count) {
+            this.timer = setTimeout(function() { self.counter(); }, 20);
+        } else {
+            clearTimeout(this.timer);
+        }
+    };
+    new numberCounter("counter1", 265000000);
+
+    var swiper = new Swiper(".myDataSwper", {
+        slidesPerView : 2.16,
+        spaceBetween: 8,
+    });  
+</script>
+
