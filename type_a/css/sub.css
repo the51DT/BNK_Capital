@@ -260,7 +260,9 @@
     border-bottom: 1px solid #EFEFEF;
   }
   .my_data .myDataSwper {
-    overflow: initial;
+    overflow: hidden;
+    padding: 0 20px 20px;
+    margin: 0 -20px;
   }
   .my_data .swiper_wrap {
     margin-top: 12px;
