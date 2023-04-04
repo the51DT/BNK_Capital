@@ -1,9 +1,8 @@
 @font-face {
   font-family: "NEXON";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+  src: url(../font/NEXON\ Lv1\ Gothic\ OTF\ Bold.otf) format('opentype');
+  font-weight: bold;
+  font-style: bold;
 }
 
 html,
