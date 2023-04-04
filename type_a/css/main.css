@@ -16,9 +16,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: hidden;
   margin: 0 auto;
   max-width: 768px;
+  width: 100%;
 }
 .header {
   flex: 0 0 60px;
@@ -28,14 +28,10 @@ body {
   padding: 0 30px;
   margin-top: 21px;
 }
-.wrap {
-  height: 100%;
-  overflow-y: auto;
-}
 .containel {
   padding: 0 20px;
   margin-top: 64px;
-  margin-bottom: 164px;
+  padding-bottom: 164px;
 }
 .header .top_menu {
   display: flex;
@@ -232,6 +228,11 @@ body {
   margin-left: auto;
 }
 
+.section04 .section_inner {
+  overflow: hidden;
+    padding: 0 20px 20px;
+    margin: 0 -20px;
+}
 .section05 .list_wrap {
   margin-top: 32px;
 }
