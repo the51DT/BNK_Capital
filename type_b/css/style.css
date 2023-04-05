@@ -1,0 +1,243 @@
+@font-face {
+font-family: "SpoqaHanSansNeo";
+src: url(../font/SpoqaHanSansNeo-Bold.otf) format('opentype');
+font-weight: bold;
+font-style: bold;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: "SpoqaHanSansNeo";
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 768px;
+}
+.header{
+    flex: 0 0 60px;
+}
+.footer{
+    flex: 0 0 40px;
+    padding:0 30px;
+    margin-top:21px;
+}
+img {
+    width: initial;
+}
+.containel{
+    padding: 0 30px;
+}
+.flex_box_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.flex_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box_shadow {
+    border-radius: 8px;
+    box-shadow: 2px 6px 17px rgb(0, 0, 0, 0.08);
+}
+
+.main header{
+    padding: 19.1px 35.34px 0px 56px;
+}
+.main .top_menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 38px;
+    margin-right: -13px;
+}
+.main .containel {
+    padding: 0px 20px;
+}
+.main .main_title {
+    margin-top: 44px;
+    align-items: flex-start;
+}
+.main .char_wrap {
+    position: relative;
+    margin-bottom: -18px;
+    margin-right: 8px;
+    margin-top: 14px;
+}
+.main .eye_wrap {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+}
+.main .eye_wrap img {
+    width: 6px;
+    height: 6px;
+}
+.main .eye_wrap img + img {
+    margin-left: 7px;
+}
+.main .loan_swiper {
+    border-radius: 8px;
+    padding: 23px 20px 27px;
+}
+.main .swiper {
+    padding: 0 20px 20px;
+    margin: 0 -20px;
+}
+.main .prog_bar {
+    border: 1px solid #efefef;
+    background: #f5f5f4;
+    width: 100%;
+    height: 8px;
+    border-radius: 500px;
+  }
+.main .prog_bar:before {
+    content: "";
+    display: inline-block;
+    width: 39%;
+    height: 8px;
+    background-color: #ED030D;
+    border-radius: 500px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    top: 0;
+    animation: prog-ani 2s ease forwards;
+}
+@keyframes prog-ani {
+0% {
+    width: 0%;
+}
+100% {
+    width: 39%;
+}
+}
+.main .loan_num span{
+    font-size: 30px;
+}
+.main .loan_num{
+    font-size: 14px;
+    color: #ED030D;
+    margin-top: 6px;
+    display: flex;
+    align-items: baseline;
+}
+.main .loan_prog{
+    position: relative;
+    margin-top: 20px;
+}
+.main .loan_info{
+    margin-top: 20px;
+}
+.main .loan_info_wrap .loan_info:last-child{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #EEEEEE;
+}
+.main .mid_banner {
+    padding: 0 0 0 20px;
+}
+
+.main.logout .mid_banner {
+    margin-top: 20px;
+}
+.main .sparkle {
+    width: 46px;
+    margin-right: -55px;
+}
+.main .mid_banner_img {
+    position: relative;
+}
+.main .mid_banner_img .crown {
+    width: 99px;
+    margin-right: 24px;
+    rotate: 11deg;
+    margin-top: -10px;
+}
+.main .mid_banner_img .shadow {
+    position: absolute;
+    bottom: 4px;
+    left: 6px;
+}
+.main .card_banner_swiper {
+    margin-top: 12px;
+}
+.main .card_banner {
+    padding: 15px 12px 12px 15px;
+}
+.main .card_banner > img:first-child {
+    z-index: 1;
+}
+.main .card_banner img + img {
+    width: 110px;
+    margin-left: auto;
+    margin-top: -24px;
+    margin-bottom: -9px;
+    margin-right: -8px;
+}
+.main .card_banner_wrap{
+    margin-top: 50px;
+}
+.main .cardSwper{
+    margin: 12px -20px 0;
+}
+.main .left_banner_wrap{
+    margin-top: 47px;
+    position: relative;
+    padding-bottom: 81px;
+}
+.main .left_banner_wrap .leftSwper {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 14px;
+}
+.main .right_img.pig {
+    width: 146px;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    z-index: 1;
+}
+.main .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -11px;
+    left: 0;
+    width: auto;
+}
+.main .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    margin: 0 2px !important;
+}
+.main .swiper-pagination .swiper-pagination-bullet-active {
+    background: #ED030D;
+}
+.main .bottom_menu {
+    padding: 15px 45px 29px;
+    margin: 0 -20px;
+    box-shadow: 2px 6px 30px rgb(0, 0, 0, 0.1);
+}
+
+.main.logout .card_banner_wrap{
+    margin-top: 87px;
+}
+.main.logout .right_img.char{
+    position: absolute;
+    z-index: 1;
+    right: -1px;
+    top: 119px;
+    width: 200px;
+}
+.main.logout .eye_wrap{
+    top: 39px;
+    left: 112px;
+}
+.main.logout .eye_wrap img + img{
+    margin-left: 11px;
+}
+.main.logout .card_banner_wrap{
+    margin-top: 87px;
+}
