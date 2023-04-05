@@ -38,7 +38,16 @@
                         <img src="./img/sub/detail/detail_contents_01_img.svg">
 
                         <div class="progress-wrap progress-type2 scroll-item">
-                            <canvas id="myChart" aria-label="내 자산" role="Chart" style="width: 205px; height: 197px;" ></canvas>
+                            <canvas id="myChart" aria-label="내 자산" role="Chart" style="width: 202px;height: 199px;" ></canvas>
+                            
+                            
+                            <div class="outer">
+                                <div class="satellite_wrap">
+                                  <div class="satellite_box satellite_box1">
+                                    <p></p>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                     <div class="detail_list box_shadow flex_box_col"data-aos="fade-up" data-aos-delay="100">
@@ -127,11 +136,11 @@
 //기간설정 프로그래스바
 window.addEventListener('scroll', function(){
     if($(".section_inner > .detail_list:nth-child(2)").hasClass("aos-animate")){
-        $(".img_money").addClass("active")
-        $(".prog_active ul").addClass("active")
+        $(".img_money").addClass("active");
+        $(".prog_active ul").addClass("active");
     }else{
-        $(".img_money").removeClass("active")
-        $(".prog_active ul").removeClass("active")
+        $(".img_money").removeClass("active");
+        $(".prog_active ul").removeClass("active");
     }
 
 
@@ -159,6 +168,7 @@ window.addEventListener('scroll', function(){
             options: {
             }
         });
+        $(".satellite_box").addClass("active");
     }else{
     }
 });

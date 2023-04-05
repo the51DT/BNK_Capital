@@ -169,6 +169,21 @@ body {
 .section02 .prog_info img {
   position: absolute;
 }
+.section02 .btn_wrap {
+  width: 50%;
+  border-radius: 16px;
+  padding:18px 0;
+  text-align: center;
+  line-height: 0;
+}
+.section02 .btn_white {
+  border: 1px solid #DDDDDD;
+  background: #fff;
+}
+.section02 .btn_navi {
+  border-radius: 1px solid #242D3C;
+  background: #242D3C;
+}
 .section02 .prog_info img:nth-child(1) {
   left: 35%;
 }
@@ -271,11 +286,11 @@ body {
   background: #242d3c;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  padding: 28px 20px 28px 30px;
+  padding: 10px 20px 28px 30px;
   text-align: center;
 }
 .bottom_sheet > img {
-  margin-top: -20px;
+  margin-top: -2px;
 }
 .bottom_sheet_wrap {
   position: fixed;
