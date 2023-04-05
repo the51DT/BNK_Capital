@@ -1,9 +1,8 @@
 @font-face {
   font-family: "NEXON";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+  src: url(../font/NEXON\ Lv1\ Gothic\ OTF\ Bold.otf) format('opentype');
+  font-weight: bold;
+  font-style: bold;
 }
 
 html,
@@ -16,9 +15,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: hidden;
   margin: 0 auto;
   max-width: 768px;
+  width: 100%;
 }
 .header {
   flex: 0 0 60px;
@@ -28,14 +27,10 @@ body {
   padding: 0 30px;
   margin-top: 21px;
 }
-.wrap {
-  height: 100%;
-  overflow-y: auto;
-}
 .containel {
   padding: 0 20px;
   margin-top: 64px;
-  margin-bottom: 164px;
+  padding-bottom: 164px;
 }
 .header .top_menu {
   display: flex;
@@ -174,6 +169,21 @@ body {
 .section02 .prog_info img {
   position: absolute;
 }
+.section02 .btn_wrap {
+  width: 50%;
+  border-radius: 16px;
+  padding:18px 0;
+  text-align: center;
+  line-height: 0;
+}
+.section02 .btn_white {
+  border: 1px solid #DDDDDD;
+  background: #fff;
+}
+.section02 .btn_navi {
+  border-radius: 1px solid #242D3C;
+  background: #242D3C;
+}
 .section02 .prog_info img:nth-child(1) {
   left: 35%;
 }
@@ -232,6 +242,11 @@ body {
   margin-left: auto;
 }
 
+.section04 .section_inner {
+  overflow: hidden;
+    padding: 0 20px 20px;
+    margin: 0 -20px;
+}
 .section05 .list_wrap {
   margin-top: 32px;
 }
@@ -271,11 +286,11 @@ body {
   background: #242d3c;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  padding: 28px 20px 28px 30px;
+  padding: 10px 20px 28px 30px;
   text-align: center;
 }
 .bottom_sheet > img {
-  margin-top: -20px;
+  margin-top: -2px;
 }
 .bottom_sheet_wrap {
   position: fixed;
