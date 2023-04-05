@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+}
+
+/* header */
+header{
+    padding: 19.1px 35.34px 19.9px 56px;
+}
+header .time{
+    width: 31px;
+}
+header .cellular{
+    width: 19.25px;
+}
+header .wifi{
+    width: 16.8px;
+}
+header .battery{
+    width: 27.16px;
+}
+header .flex{
+    align-items: center;
+    justify-content: space-between;
+}
+header .flex .flex{
+    gap: 7.35px;
+}

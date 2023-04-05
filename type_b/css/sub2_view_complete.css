@@ -1,0 +1,24 @@
+section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.check{
+    margin-top: 132px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.check img{
+    width: 146px;
+}
+.title{
+    margin-top: 89px;
+}
+.sub_title{
+    margin-top: 16px;
+}
+
+.btn_bottom{
+    margin-top: 140px;
+}

@@ -1,0 +1,24 @@
+section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.character{
+    margin-top: 36.7px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.character img:nth-of-type(1){
+    width: 107.9px;
+}
+.title{
+    margin-top: 60px;
+}
+.sub_title{
+    margin-top: 16px;
+}
+
+.btn_bottom{
+    margin-top: 140px;
+}
