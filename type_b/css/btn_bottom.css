@@ -8,9 +8,6 @@
 .btn_bottom a{
     display: flex;
     justify-content: center;
-    padding: 18px 0 19px;
+    padding: 21px 0 22px;
     width: 100%;
-}
-.btn_bottom img{
-    flex-basis: 33px;
 }

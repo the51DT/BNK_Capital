@@ -28,31 +28,21 @@
     width: 130px;
     margin-top: 10px;
     padding-bottom: 20px;
-    flex-basis: 20px;
 }
 .info_name{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
-.info_name img{
-    flex-basis: 20px;
-}
 .info_num{
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
 }
-.info_num img{
-    flex-basis: 20px;
-}
 .info_limit{
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
-}
-.info_limit img{
-    flex-basis: 20px;
 }
 .info_rate{
     margin-top: 12px;
@@ -60,15 +50,9 @@
     display: flex;
     justify-content: space-between;
 }
-.info_rate img{
-    flex-basis: 20px;
-}
 .info_caution{
     margin-top: 14px;
     display: flex;
-}
-.info_caution img{
-    flex-basis: 255px;
 }
 .amount{
     margin-top: 40px;
@@ -77,7 +61,6 @@
 }
 .amount img{
     width: auto;
-    height: 18px;
 }
 .amount>img:first-child{
     width: 90px;
@@ -100,5 +83,5 @@
 }
 
 .btn_bottom{
-    margin-top: 100px;
+    margin-top: 65px;
 }

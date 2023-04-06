@@ -7,6 +7,9 @@ section{
     width: 238px;
     margin-top: 65px;
 }
+.bell img{
+    width: 100%;
+}
 .title{
     margin-top: 64px;
 }
