@@ -32,7 +32,27 @@
             overflow-y: auto;
         }
         .containel{
-            padding: 0 30px;
+            padding: 0 20px;
+            margin-top: 30px;
+        }
+        .type_box ul li a{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 18px 0 19px;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 15px;
+            background: #242D3C;
+        }
+        .type_box ul li a.b{
+            background: #D71921;
+        }
+        .top_menu{
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 20px 0;
         }
     </style>
   </head>
@@ -40,12 +60,29 @@
     <div class="wrap">
         <div class="header">
             <header>
-
+                <div class="top_menu">
+                    <div class="logo">
+                        <img src="./assets/img/ico_top_logo.svg">
+                    </div>
+                </div>
             </header>  
         </div>
         <div class="containel">
             <section>
-                
+                <div class="type_box">
+                    <ul>
+                        <li>
+                            <a class="a" href="https://the51uid.github.io/BNK_Capital/type_a/index.html">
+                                BNK 캐피탈 Type A
+                            </a>
+                        </li>
+                        <li>
+                            <a class="b" href="https://the51uid.github.io/BNK_Capital/type_b/index_login.html">
+                                BNK 캐피탈 Type B
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
         <div class="footer">
