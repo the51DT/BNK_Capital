@@ -101,5 +101,35 @@
         slidesPerView : 4.3,
         spaceBetween: 20,
     });  
+
+    
+    // 원페이지 스크롤
+    var flag = true,
+        last_scrollTop = 0;
+
+    $(window).scroll(function(){
+        var tmp = $(this).scrollTop(),
+            windowTop = $(this).scrollTop();
+
+        if (tmp > last_scrollTop) {
+            if(flag){
+                if(windowTop > 130){
+                    $(".detail_content").addClass("active");
+                    $("html").animate({scrollTop : 720}, 250);
+                    flag = false;
+                }
+            }
+        } else {
+            if(!flag){
+                if((windowTop < 159)){
+                    console.log(flag)
+                    $(".detail_content").removeClass("active");
+                    flag = true;
+                }
+            }
+        }
+
+        last_scrollTop = tmp;
+    });
   </script>
 </html>

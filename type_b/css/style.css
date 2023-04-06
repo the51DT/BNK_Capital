@@ -58,6 +58,7 @@ img {
 }
 .main .containel {
     padding: 0px 20px;
+    padding-bottom: 92px;
 }
 .main .main_title {
     margin-top: 44px;
@@ -151,6 +152,8 @@ img {
 
 .main.logout .mid_banner {
     margin-top: 20px;
+    position: relative;
+    z-index: 2;
 }
 .main .sparkle {
     width: 46px;
@@ -194,10 +197,14 @@ img {
     margin: 12px -20px 0;
 }
 .main .left_banner_wrap{
-    margin-top: 47px;
+    padding-top: 47px;
     position: relative;
-    padding-bottom: 125px;
+    padding-bottom: 76px;
     overflow: hidden;
+}
+.main .left_banner_wrap .left_banner{
+    position: relative;
+    z-index: 2;
 }
 .main .left_banner_wrap .leftSwper {
     padding: 0;
@@ -208,7 +215,7 @@ img {
     width: 146px;
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -3px;
     z-index: 1;
 }
 .main .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -228,6 +235,12 @@ img {
     padding: 15px 45px 29px;
     margin: 0 -20px;
     box-shadow: 2px 6px 30px rgb(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 3;
+    max-width: 767px;
 }
 
 .main.logout .card_banner_wrap{
@@ -255,7 +268,10 @@ img {
     margin-left: 11px;
 }
 .main.logout .card_banner_wrap{
-    margin-top: 87px;
+    margin-top: 50px;
+}
+.main .bottom_con{
+    padding-bottom: 68px;
 }
 
 
@@ -341,6 +357,7 @@ img {
     position: relative;
     text-align: center;
     margin-top: 87px;
+    padding-bottom: 35px;
 }
 .prod_detail .detail_content_img .flex_box_col {
     margin-top: 89px;
@@ -368,7 +385,19 @@ img {
 }
 .prod_detail .btn_wrap {
     text-align: center;
-    margin-top:71px;
+    margin-top:30px;
+    width: 100%;
+    max-width: 767px;
+    padding: 20px 0px 40px;
+    background: #fff;
+}
+.prod_detail .detail_content.active .btn_wrap {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    padding: 20px 20px 40px;
 }
 .prod_detail .btn_wrap .btn {
     padding: 18px 0;
@@ -383,7 +412,7 @@ img {
 }
 .prod_detail .detail_content_sub{
     align-items: center;
-   margin-top:160px;
+   margin-top:125px;
 }
 .prod_detail .detail_content_sub.sub_01 img + img{
     width: 302px;
@@ -394,7 +423,7 @@ img {
 }
 .prod_detail .detail_list{
     margin-top: 178px;
-    margin-bottom: 40px;
+    margin-bottom: 150px;
 }
 .prod_detail .detail_list ul li{
     border-top: 1px solid #eee;
