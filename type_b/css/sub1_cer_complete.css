@@ -24,13 +24,13 @@ section{
 }
 .effect img:nth-child(1){
     position: absolute;
-    bottom: -20px;
-    left: -15%;
+    bottom: -36px;
+    left: -28%;
     width: 232px;
 }
 .effect img:nth-child(2){
     position: absolute;
-    bottom: 480px;
-    right: -20%;
+    bottom: 393px;
+    right: -31%;
     width: 285px;
 }

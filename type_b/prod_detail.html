@@ -67,12 +67,12 @@
                         </div>
                     </div>
                     <div class="detail_content_sub sub_01 flex_box_col">
-                        <img src="./img/sub/detail/detail_desc_01.svg">
-                        <img src="./img/sub/detail/img_fist.gif">
+                        <img src="./img/sub/detail/detail_desc_01.svg" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./img/sub/detail/img_fist.gif" data-aos="fade-up" data-aos-delay="300">
                     </div>
                     <div class="detail_content_sub sub_02 flex_box_col">
-                        <img src="./img/sub/detail/detail_desc_02.svg">
-                        <img src="./img/sub/detail/img_find.gif">
+                        <img src="./img/sub/detail/detail_desc_02.svg" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./img/sub/detail/img_find.gif" data-aos="fade-up" data-aos-delay="100">
                     </div>
                     <div class="detail_list">
                         <ul>
@@ -104,6 +104,8 @@
   <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init();
+
     var swiper = new Swiper(".tabSwper", {
         slidesPerView : 4.3,
         spaceBetween: 20,
@@ -122,7 +124,7 @@
             if(flag){
                 if(windowTop > 130){
                     $(".detail_content").addClass("active");
-                    $("html").animate({scrollTop : 720}, 250);
+                    $("html").animate({scrollTop : 710}, 250);
                     flag = false;
                 }
             }

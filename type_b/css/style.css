@@ -43,7 +43,7 @@ img {
 }
 .box_shadow {
     border-radius: 8px;
-    box-shadow: 2px 6px 17px rgb(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.08);
 }
 
 /* 메인 Login, Logout */
@@ -93,8 +93,8 @@ img {
     padding: 23px 20px 27px;
 }
 .main .swiper {
-    padding: 0 20px 20px;
-    margin: 0 -20px;
+    padding: 30px 20px 50px;
+    margin: -30px -20px;
 }
 .main .prog_bar {
     border: 1px solid #efefef;
@@ -194,12 +194,13 @@ img {
     margin-top: 50px;
 }
 .main .cardSwper{
-    margin: 12px -20px 0;
+    margin: 0px -20px 0;
+    padding-top: 12px;
 }
 .main .left_banner_wrap{
     padding-top: 47px;
     position: relative;
-    padding-bottom: 76px;
+    padding-bottom: 122px;
     overflow: hidden;
 }
 .main .left_banner_wrap .left_banner{
@@ -250,7 +251,7 @@ img {
     position: absolute;
     z-index: 1;
     right: 10px;
-    top: 119px;
+    top: 166px;
     width: 200px;
 }
 .main.logout .right_img .img_fire{
@@ -426,7 +427,7 @@ img {
 }
 .prod_detail .detail_content_sub{
     align-items: center;
-   margin-top:125px;
+   margin-top:190px;
 }
 .prod_detail .detail_content_sub.sub_01 img + img{
     width: 302px;

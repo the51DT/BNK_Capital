@@ -8,8 +8,8 @@
     flex-basis: 166px;
 }
 .title_box img:nth-of-type(2){
-    top: -65%;
-    right: 0;
+    top: -84%;
+    right: -36px;
     position: absolute;
     width: 166px;
     z-index: -2;
