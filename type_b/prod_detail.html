@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Type B Product Detail</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="wrap prod_detail">
+        <div class="header">
+            <header>
+                <div class="flex">
+                    <img class="time" src="./img/main/header/Time.svg">
+                    <div class="flex">
+                        <img class="cellular" src="./img/main/header/Cellular.svg">
+                        <img class="wifi" src="./img/main/header/Wifi.svg">
+                        <img class="battery" src="./img/main/header/Battery.svg">
+                    </div>
+                </div>
+                <div class="top_menu flex_box">
+                    <img src="./img/sub/detail/ico_arrow.svg">
+                    <img src="./img/sub/detail/page_title.svg">
+                    <img src="./img/sub/detail/ico_home.svg">
+                </div>
+            </header> 
+        </div>
+        <div class="containel">
+            <section>
+                <div class="prod_detail">
+                    <div class="detail_content">
+                        <img class="img_fire" src="./img/sub/detail/img_firecracker.gif">
+                        <img class="img_title" src="./img/sub/detail/detail_title.svg">
+                        <div class="detail_content_img">
+                            <div class="char_wrap">
+                                <img src="./img/sub/detail/img_char.svg">
+                                <div class="eye_wrap">
+                                    <img src="./img/main/img_eye.gif">
+                                    <img src="./img/main/img_eye.gif">
+                                </div>
+                            </div>
+                            
+                            <div class="flex_box_col">
+                                <img src="./img/sub/detail/scroll_text.svg">
+                                <img src="./img/sub/detail/scroll_arrow.svg">
+                            </div>
+                        </div>
+                        <div class="flex_box btn_wrap">
+                            <div class="btn">
+                                <img src="./img/sub/detail/consult.svg">
+                            </div>
+                            <div class="btn">
+                                <img src="./img/sub/detail/limit.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_content_sub sub_01 flex_box_col">
+                        <img src="./img/sub/detail/detail_desc_01.svg">
+                        <img src="./img/sub/detail/img_fist.gif">
+                    </div>
+                    <div class="detail_content_sub sub_02 flex_box_col">
+                        <img src="./img/sub/detail/detail_desc_02.svg">
+                        <img src="./img/sub/detail/img_find.gif">
+                    </div>
+                    <div class="detail_list">
+                        <ul>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_01.svg">
+                                <img src="./img/sub/detail/ico_arrow.svg">
+                            </li>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_02.svg">
+                                <img src="./img/sub/detail/ico_arrow.svg">
+                            </li>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_03.svg">
+                                <img src="./img/sub/detail/ico_arrow.svg">
+                            </li>
+                            <li class="flex_box">
+                                <img src="./img/sub/detail/detail_list_04.svg">
+                                <img src="./img/sub/detail/ico_arrow.svg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+  </body>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    var swiper = new Swiper(".tabSwper", {
+        slidesPerView : 4.3,
+        spaceBetween: 20,
+    });  
+
+    
+    // 원페이지 스크롤
+    var flag = true,
+        last_scrollTop = 0;
+
+    $(window).scroll(function(){
+        var tmp = $(this).scrollTop(),
+            windowTop = $(this).scrollTop();
+
+        if (tmp > last_scrollTop) {
+            if(flag){
+                if(windowTop > 130){
+                    $(".detail_content").addClass("active");
+                    $("html").animate({scrollTop : 720}, 250);
+                    flag = false;
+                }
+            }
+        } else {
+            if(!flag){
+                if((windowTop < 159)){
+                    console.log(flag)
+                    $(".detail_content").removeClass("active");
+                    flag = true;
+                }
+            }
+        }
+
+        last_scrollTop = tmp;
+    });
+  </script>
+</html>
