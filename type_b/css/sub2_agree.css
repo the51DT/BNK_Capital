@@ -1,5 +1,6 @@
 .title_box{
-    margin-top: -26px;
+    position: relative;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -7,6 +8,9 @@
     flex-basis: 166px;
 }
 .title_box img:nth-of-type(2){
+    top: -65%;
+    right: 0;
+    position: absolute;
     width: 166px;
     z-index: -2;
 }

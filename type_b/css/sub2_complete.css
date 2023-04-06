@@ -1,0 +1,25 @@
+section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.heart{
+    margin-top: 139px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.heart img:nth-of-type(1){
+    width: 214px;
+}
+.title{
+    margin-top: 70px;
+}
+.sub_title{
+    margin-top: 16px;
+}
+
+
+.btn_bottom{
+    margin-top: 140px;
+}

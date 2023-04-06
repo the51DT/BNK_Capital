@@ -5,6 +5,7 @@ section{
     align-items: center;
 }
 .clap{
+    width: 266px;
     margin-top: 97px;
 }
 .title{
@@ -29,7 +30,7 @@ section{
 }
 .effect img:nth-child(2){
     position: absolute;
-    bottom: 500px;
+    bottom: 480px;
     right: -20%;
     width: 285px;
 }

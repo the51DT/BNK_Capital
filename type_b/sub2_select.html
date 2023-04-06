@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/btn_bottom.css">
-    <link rel="stylesheet" href="css/sub1_personal_info.css">
+    <link rel="stylesheet" href="css/sub2_select.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <style>
         html,body{
             height: 100%;
@@ -59,48 +60,51 @@
         </div>
         <div class="nav">
             <nav>
-                <a href="sub1_sms_send.html"><img class="btn_back" src="./img/sub/btn_back.svg"></a>
+                <a><img class="btn_back" src="./img/sub/btn_back.svg"></a>
+                <a><img class="btn_home" src="./img/sub/btn_home.svg"></a>
             </nav>
         </div>
         <div class="containel">
             <section>
                 <div class="title_box">
-                    <img src="./img/sub/sub1/personal_info/title.svg">
-                    <img src="./img/sub/sub1/personal_info/pen.gif">
+                    <img src="./img/sub/sub2/select/title.svg">
+                    <img src="./img/sub/sub2/select/eyes.gif">
                 </div>
-                <div class="agree">
-                    <img src="./img/sub/sub1/personal_info/agree_box.svg">
-                    <img src="./img/sub/sub1/personal_info/agree.svg">
+                <div class="info info1">
+                    <div class="info_title">
+                        <img src="./img/sub/sub2/select/info_title1.svg">
+                    </div>
+                    <div class="line"></div>
+                    <div class="info_limit">
+                        <img src="./img/sub/sub2/select/limit.svg">
+                        <img src="./img/sub/sub2/select/limit_place1.svg">
+                    </div>
+                    <div class="info_rate">
+                        <img src="./img/sub/sub2/select/rate.svg">
+                        <img src="./img/sub/sub2/select/rate_place1.svg">
+                    </div>
                 </div>
-                <div class="place">
-                    <div class="name">
-                        <img src="./img/sub/sub1/personal_info/name.svg">
-                        <img src="./img/sub/sub1/personal_info/name_place.svg">
+                <div class="info info2">
+                    <div class="info_title">
+                        <img src="./img/sub/sub2/select/info_title2.svg">
                     </div>
                     <div class="line"></div>
-                    <div class="num">
-                        <img src="./img/sub/sub1/personal_info/num.svg">
-                        <img src="./img/sub/sub1/personal_info/num_place.svg">
+                    <div class="info_limit">
+                        <img src="./img/sub/sub2/select/limit.svg">
+                        <img src="./img/sub/sub2/select/limit_place2.svg">
                     </div>
-                    <div class="line"></div>
-                    <div class="wire">
-                        <img src="./img/sub/sub1/personal_info/wire.svg">
-                        <div>
-                            <img src="./img/sub/sub1/personal_info/wire_place.svg">
-                            <img src="./img/sub/sub1/personal_info/wire_btn.svg">
-                        </div>
+                    <div class="info_rate">
+                        <img src="./img/sub/sub2/select/rate.svg">
+                        <img src="./img/sub/sub2/select/rate_place2.svg">
                     </div>
-                    <div class="line"></div>
-                    <div class="phone">
-                        <img src="./img/sub/sub1/personal_info/phone.svg">
-                        <img src="./img/sub/sub1/personal_info/phone_place.svg">
-                    </div>
-                    <div class="line"></div>
                 </div>
             </section>
-            <section>
+            <section class="btn_bottom_container">
                 <div class="btn_bottom">
-                    <a href="sub1_cer_complete.html"><img src="./img/sub/sub1/personal_info/btn_bottom.svg"></a>
+                    <a><img src="./img/sub/sub2/select/btn_bottom_left.svg"></a>
+                </div>
+                <div class="btn_bottom">
+                    <a href="sub2_enter_condition.html"><img src="./img/sub/sub2/select/btn_bottom_right.svg"></a>
                 </div>
             </section>
         </div>
@@ -110,6 +114,11 @@
             </footer>
         </div>
     </div>
-    </div>
+    <script>
+        $(".info").click(function(){
+            $(".info").removeClass("info1");
+            $(this).addClass("info1")
+        })
+    </script>
   </body>
 </html>

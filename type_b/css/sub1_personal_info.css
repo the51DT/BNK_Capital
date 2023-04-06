@@ -1,9 +1,17 @@
 .title_box{
+    margin-top: 30px;
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 .title_box img{
     flex-basis: 86px;
+}
+.title_box img:nth-of-type(2){
+    position: absolute;
+    top: -5%;
+    right: 0;
+    width: 86px;
 }
 
 .agree{
