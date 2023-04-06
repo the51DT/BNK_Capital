@@ -449,11 +449,6 @@ img {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
 }
-.prod_detail .detail_list ul li img + img{
-    width: 5px;
-    height: 10px;
-    transform: rotate(-90deg);
-}
 .prod_detail .eye_wrap{
     position: absolute;
     top: 38px;
