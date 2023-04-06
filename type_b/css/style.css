@@ -175,6 +175,7 @@ img {
 }
 .main .card_banner {
     padding: 15px 12px 12px 15px;
+    overflow: hidden;
 }
 .main .card_banner > img:first-child {
     z-index: 1;
@@ -183,8 +184,8 @@ img {
     width: 110px;
     margin-left: auto;
     margin-top: -24px;
-    margin-bottom: -9px;
-    margin-right: -8px;
+    margin-bottom: -27px;
+    margin-right: -28px;
 }
 .main .card_banner_wrap{
     margin-top: 50px;
