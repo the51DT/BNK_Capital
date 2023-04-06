@@ -46,6 +46,7 @@ img {
     box-shadow: 2px 6px 17px rgb(0, 0, 0, 0.08);
 }
 
+/* 메인 Login, Logout */
 .main header{
     padding: 19.1px 35.34px 0px 56px;
 }
@@ -61,6 +62,12 @@ img {
 .main .main_title {
     margin-top: 44px;
     align-items: flex-start;
+}
+.main .char_wrap {
+    position: relative;
+    margin-bottom: -18px;
+    margin-right: 8px;
+    margin-top: 14px;
 }
 .main .char_wrap {
     position: relative;
@@ -188,7 +195,8 @@ img {
 .main .left_banner_wrap{
     margin-top: 47px;
     position: relative;
-    padding-bottom: 81px;
+    padding-bottom: 125px;
+    overflow: hidden;
 }
 .main .left_banner_wrap .leftSwper {
     padding: 0;
@@ -222,14 +230,21 @@ img {
 }
 
 .main.logout .card_banner_wrap{
-    margin-top: 87px;
+    margin-top: 43px;
 }
 .main.logout .right_img.char{
     position: absolute;
     z-index: 1;
-    right: -1px;
+    right: 10px;
     top: 119px;
     width: 200px;
+}
+.main.logout .right_img .img_fire{
+    width: 244px;
+    position: absolute;
+    right: -70px;
+    top: -135px;
+    z-index: -1;
 }
 .main.logout .eye_wrap{
     top: 39px;
@@ -240,4 +255,176 @@ img {
 }
 .main.logout .card_banner_wrap{
     margin-top: 87px;
+}
+
+
+/* 제품 리스트 */
+.prod_list .containel{
+    padding: 0 20px;
+}
+.prod_list .prod_list{
+    margin-top: 24px;
+    padding-bottom: 60px;
+}
+.prod_list .tab_list{
+    margin-top: 22px;
+}
+.prod_list .prod_card_list{
+    margin-top: 47px;
+}
+.prod_list .prod_card_list + .prod_card_list{
+    margin-top: 40px;
+}
+.prod_list .prod_card_item {
+    padding: 30px 20px;
+    margin-top: 12px;
+}
+.prod_list .prod_card_item + .prod_card_item {
+    margin-top: 10px;
+}
+.prod_list .prod_card_item_content {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+.prod_list .prod_card_item_title {
+    align-items: flex-start;
+}
+.prod_list .prod_card_item_title img + img {
+    margin-top:-13px;
+}
+.prod_list .bottom_menu {
+    padding: 15px 45px 29px;
+    margin: 0 -20px;
+    box-shadow: 2px 6px 30px rgb(0, 0, 0, 0.1);
+}
+.prod_list .top_menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 38px;
+    margin-right: -13px;
+}
+.prod_list .swiper-slide{
+    width: auto !important;
+}
+.prod_list .swiper{
+    padding: 0 20px 0 20px;
+    margin: 0 -20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 제품 상세 */
+.prod_detail header{
+    padding: 19.1px 35.34px 0px 56px;
+}
+.prod_detail .top_menu {
+    margin-top: 38px;
+    margin-left: -29px;
+    margin-right: -15.34px;
+}
+.prod_detail .detail_content {
+    position: relative;
+    margin-top: 66px;
+    overflow: hidden;
+}
+.prod_detail .img_fire {
+    width: 333px;
+    position: absolute;
+    right: -105px;
+    top: 12px;
+}
+.prod_detail .img_title {
+    position: relative;
+}
+.prod_detail .detail_content_img {
+    position: relative;
+    text-align: center;
+    margin-top: 87px;
+}
+.prod_detail .detail_content_img .flex_box_col {
+    margin-top: 89px;
+    align-items: center;
+    position: relative
+}
+.prod_detail .detail_content_img .flex_box_col img + img {
+    animation: scroll-ani 1s ease infinite;
+    position: absolute;
+    bottom: -25px;
+    right: 50%;
+    transform: translateX(-50%);
+}
+  @keyframes scroll-ani {
+    0% {
+        bottom: -25px;
+    }
+    100% {
+        bottom: -35px;
+    }
+  }
+
+.prod_detail .containel {
+    padding: 0 20px;
+}
+.prod_detail .btn_wrap {
+    text-align: center;
+    margin-top:71px;
+}
+.prod_detail .btn_wrap .btn {
+    padding: 18px 0;
+    background: #C8C8C8;
+    border-radius: 8px;
+    width: 42.35%;
+}
+.prod_detail .btn_wrap .btn + .btn{
+    background: #D71921;
+    width: 72.65%;
+    margin-left: 10px;
+}
+.prod_detail .detail_content_sub{
+    align-items: center;
+   margin-top:160px;
+}
+.prod_detail .detail_content_sub.sub_01 img + img{
+    width: 302px;
+}
+.prod_detail .detail_content_sub.sub_02 img + img{
+    width: 162px;
+    margin-top: 68px;
+}
+.prod_detail .detail_list{
+    margin-top: 178px;
+    margin-bottom: 40px;
+}
+.prod_detail .detail_list ul li{
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.prod_detail .detail_list ul li:first-child{
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+.prod_detail .detail_list ul li img + img{
+    width: 5px;
+    height: 10px;
+    transform: rotate(-90deg);
+}
+.prod_detail .eye_wrap{
+    position: absolute;
+    top: 38px;
+    left: 17px;
+    width: 100%;
+}
+.prod_detail .eye_wrap img + img{
+    margin-left: 11px;
+}
+.prod_detail .eye_wrap img {
+    width: 6px;
+    height: 6px;
+}
+.prod_detail .char_wrap {
+    width: 217px;
+    margin: 0 auto;
+    position: relative;
 }
