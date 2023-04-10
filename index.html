@@ -21,21 +21,21 @@
         }
         .header{
             flex: 0 0 60px;
+            padding: 60px 0 0 30px;
         }
         .footer{
             flex: 0 0 40px;
             padding:0 30px;
-            margin-top:21px;
+            margin-top: 50px;
         }
         .wrap{
             height: 100%;
             overflow-y: auto;
         }
         .containel{
-            padding: 0 20px;
-            margin-top: 30px;
+            padding: 0 30px;
         }
-        .type_box ul li a{
+        /* .type_box ul li a{
             display: flex;
             justify-content: center;
             width: 100%;
@@ -53,6 +53,30 @@
             display: flex;
             justify-content: space-between;
             padding: 60px 20px 0;
+        } */
+        .type_container{
+            margin-top: 105px;
+        }
+        .flex{
+            display: flex;
+            flex-flow: column;
+        }
+        .title{
+            margin-bottom: 59px;
+        }
+        .type_box{
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 16px rgba(36, 45, 60, 0.08);
+            border-radius: 16px;
+        }
+        .flex a:nth-of-type(1) div{
+            padding: 21px 79px 38px;
+        }
+        .flex a:nth-of-type(2) div{
+            padding: 21px 73px 38px;
         }
     </style>
   </head>
@@ -69,7 +93,24 @@
         </div>
         <div class="containel">
             <section>
-                <div class="type_box">
+                <div class="type_container">
+                    <div class="flex">
+                        <div class="title">
+                            <img src="./assets/img/title.svg">
+                        </div>
+                        <a href="./type_a/index.html">
+                            <div class="type_box">
+                                <img src="./assets/img/type_a.svg">
+                            </div>
+                        </a>
+                        <a href="./type_b/index_login.html">
+                            <div class="type_box">
+                                <img src="./assets/img/type_b.svg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="type_box">
                     <ul>
                         <li>
                             <span style="font-weight: bold;">BNK 캐피탈 Type A</span>
@@ -90,12 +131,12 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </section>
         </div>
         <div class="footer">
             <footer>
-                
+                <img src="./assets/img/footer.svg">
             </footer>
         </div>
     </div>
