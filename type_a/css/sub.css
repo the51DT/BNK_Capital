@@ -30,7 +30,7 @@
   .containel {
     padding: 0 20px;
     margin-top: 41px;
-    padding-bottom: 70px;
+    padding-bottom: 32px;
   }
   .header .top_menu {
     display: flex;
@@ -62,11 +62,15 @@
   .info_list{
     margin-top: 32px;
     padding-top: 20px;
+  }
+  .info_list_line{
+    margin-top: 32px;
+    padding-top: 20px;
     border-top: 1px solid #DDDDDD;
   }
-  .info_list .info_item .info_item_title{
+  /* .info_list .info_item .info_item_title{
     margin-top: 60px;
-  }
+  } */
   .info_item .info_item_title{
     padding-bottom: 16px;
     margin-bottom: 20px;
